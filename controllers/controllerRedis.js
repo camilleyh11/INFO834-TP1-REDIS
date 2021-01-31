@@ -23,7 +23,7 @@ const incrementToken = (req, res, token, d) => {
 function connectToken(req, token){
     const jwt = require('jsonwebtoken')
     try{
-        const payload = jwt.verify(token, "My so secret sentence");
+        const payload = jwt.verify(token, "123456");
         req.session.logged = true;
         req.session.token = token;
 

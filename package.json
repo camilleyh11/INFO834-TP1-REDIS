@@ -18,7 +18,9 @@
   "homepage": "https://github.com/camilleyh11/INFO834-TP1-REDIS#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "connect-mongo": "^3.2.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.13",
     "passport": "^0.4.1",
