@@ -20,6 +20,12 @@
     "bcrypt": "^5.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.13"
+    "mongoose": "^5.11.13",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "redis": "^3.0.2",
+    "secrets": "^1.1.5",
+    "secrets-js": "^0.9.2",
+    "secrets.js-grempe": "^2.0.0"
   }
 }

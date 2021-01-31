@@ -1,8 +1,5 @@
-const jwt = require('jsonwebtoken');
-
-function createToken(user) {
-    return jwt.sign({id: user.id, username: user.username}, "My so secret sentence");
-}
+const redis = require("redis");
+const client = redis.createClient();
 
 function createUser(req, res) {
     let User = require('../models/modelUser');
@@ -10,8 +7,7 @@ function createUser(req, res) {
         nom: req.body.nom,
         prenom : req.body.prenom,
         email : req.body.email,
-        mdp : req.body.mdp,
-        token: generateToken(newUser)
+        mdp : req.body.mdp
     });
   
     newUser.save()
